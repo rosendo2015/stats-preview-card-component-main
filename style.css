@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+
+  --Very-dark-blue: hsl(233, 47%, 7%); /*(main background)*/
+  --Dark-desaturated-blue: hsl(244, 38%, 16%); /*(card background)*/
+  --Soft-violet: hsl(277, 64%, 61%); /*  (accent)*/
+  --White: hsl(0, 0%, 100%); /*(main heading, stats) */
+  --Slightly-transparent-white-m: hsla(0, 0%, 100%, 0.75); /*(main paragraph) */
+  --Slightly-transparent-white-h: hsla(0, 0%, 100%, 0.6); /*(stat headings) */
+}
+body {
+  font-size: 1.6rem;
+  width: 100%;
+  background-color: var(--Very-dark-blue);
+  padding: 7rem 0;
+}
+.page {
+  background: var(--Dark-desaturated-blue);
+  padding: 0;
+  margin: 0 auto;
+  width: 375px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  border-radius: 8px;
+}
+h1 {
+  margin: 3rem;
+  font-weight: 700;
+  color: var(--White);
+  font-size: 3.4rem;
+  line-height: 110%;
+}
+#destak {
+    font-size: 3.4rem;
+  color: var(--Soft-violet);
+}
+p {
+  padding: 0 4rem;
+  color: var(--Slightly-transparent-white-h);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.6rem;
+  line-height: 160%;
+}
+img {
+  width: 100%;
+
+  border-radius: 8px 8px 0 0;
+}
+main .image-containner {
+  background: var(--Dark-desaturated-blue);
+  width: fit-content;
+}
+main h2{
+    margin-top: 4rem;
+    color: var(--Slightly-transparent-white-m);
+    font-size: 3.0rem;
+}
+main span{
+    text-transform: uppercase;    
+    color: var(--Slightly-transparent-white-h);
+    font-size: 1.6rem;
+
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
