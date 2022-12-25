@@ -29,8 +29,8 @@ body {
   border-radius: 8px;
 }
 h1 {
-  margin: 3rem;
-  font-weight: 700;
+  margin: 4rem 3rem 3rem;
+  font-weight: 600;
   color: var(--White);
   font-size: 3.4rem;
   line-height: 110%;
@@ -46,17 +46,23 @@ p {
   font-size: 1.6rem;
   line-height: 160%;
 }
-img {
-  width: 100%;
-  opacity: 0.4;
+header .container-img {
+  position: absolute;
+  width: 375px;
+  height: 275px;
+  background-color: var(--Soft-violet);
   border-radius: 8px 8px 0 0;
 }
-.image-containner {
-  border-radius: 8px 8px 0 0;
-  background: var(--Soft-violet);
+main::before {
+  content: "";
   width: 100%;
   height: 275px;
-  filter: contrast(1.2);
+  background-image: url(./images/image-header-mobile.jpg);
+  background-size: cover;
+  display: block;
+  opacity: 0.5;
+  border-radius: 8px 8px 0 0;
+  filter: contrast(1);
 }
 main h2 {
   margin: 4rem 0 1.1rem;
@@ -74,10 +80,82 @@ main span {
 }
 
 .attribution {
+  color: var(--White);
   font-size: 11px;
   text-align: center;
 }
 
 .attribution a {
+  text-decoration: none;
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 600px) {
+  body {
+    margin: 0 auto;
+  }
+
+  .page {
+    display: flex;
+    align-items: flex-end;    
+    width: 70%;
+  }
+  .page main {
+    width: 100%;
+    display: flex;
+    text-align: start;
+  }
+  main::before {
+    display: none;
+  }
+  header .container-img {
+    display: none;
+  }
+  
+  .container .wrapper-status{
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;    
+    width: 500px;
+    padding-left: 3rem;
+  }
+  .container .wrapper-status h2{
+    font-size: 2.5rem;
+
+  }
+  .container .wrapper-status span{
+  font-size: 1.2rem;
+
+  }
+  .container{
+    width: 100%;  
+    padding: 3rem;
+   
+  }
+  .wrapper-text{
+       width: 500px;
+
+  }.container-img-descktop{
+    position: absolute;
+    right: 0;
+    min-width: 48.8%;
+    border-radius: 0 8px 8px 0;
+    height: 422px;
+    background-color: var(--Soft-violet);
+  }
+  main{
+    position: relative;
+
+  }
+  main::after {
+    content: "";
+    width: 100%;    
+    background-image: url(./images/image-header-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    border-radius: 0 8px 8px 0;
+    opacity: 0.5;
+  }
+  
 }
