@@ -90,7 +90,7 @@ main span {
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 1444px) {
+@media (min-width: 1300px) {
   body {
     width: 100%;
     height: 100vh;
