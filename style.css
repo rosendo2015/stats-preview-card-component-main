@@ -23,7 +23,7 @@ body {
   background: var(--Dark-desaturated-blue);
   padding: 0;
   margin: 0 auto;
-  width: 375px;
+  width: 37.5rem;
   text-align: center;
   font-family: "Inter", sans-serif;
   border-radius: 8px;
@@ -90,14 +90,16 @@ main span {
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1444px) {
   body {
-    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    margin: 150px auto;
   }
 
   .page {
     display: flex;
-    align-items: flex-end;    
+    align-items: flex-end;
     width: 70%;
   }
   .page main {
@@ -111,51 +113,47 @@ main span {
   header .container-img {
     display: none;
   }
-  
-  .container .wrapper-status{
+
+  .container .wrapper-status {
     display: flex;
     justify-content: flex-start;
-    gap: 50px;    
+    gap: 50px;
     width: 500px;
     padding-left: 3rem;
   }
-  .container .wrapper-status h2{
+  .container .wrapper-status h2 {
     font-size: 2.5rem;
-
   }
-  .container .wrapper-status span{
-  font-size: 1.2rem;
-
+  .container .wrapper-status span {
+    font-size: 1.2rem;
   }
-  .container{
-    width: 100%;  
+  .container {
+    border-radius: 8px  0  0 8px;
+    background: var(--Dark-desaturated-blue);
+    width: 100%;
     padding: 3rem;
-   
   }
-  .wrapper-text{
-       width: 500px;
-
-  }.container-img-descktop{
-    position: absolute;
-    right: 0;
-    min-width: 48.8%;
-    border-radius: 0 8px 8px 0;
-    height: 422px;
-    background-color: var(--Soft-violet);
+  .wrapper-text {
+    width: 500px;
+    
   }
-  main{
-    position: relative;
 
+  
+  main {
+    background: var(--Soft-violet);
+    border-radius: 8px;
+    width: 100%;
   }
   main::after {
+    
     content: "";
-    width: 100%;    
+    width: 100%;
     background-image: url(./images/image-header-desktop.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: top center center;
     display: inline-block;
     border-radius: 0 8px 8px 0;
     opacity: 0.5;
   }
-  
 }
